@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'IBM Plex Sans Arabic', 'Alexandria', 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* CRITICAL: Never allow letter-spacing (tracking) on Arabic text - letter spacing breaks cursive glyph joins! */
+.font-arabic,
+[lang="ar"],
+[dir="rtl"],
+*:lang(ar) {
+  font-family: 'IBM Plex Sans Arabic', 'Alexandria', 'Cairo', system-ui, sans-serif;
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}

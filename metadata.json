@@ -1,0 +1,6 @@
+{
+  "name": "Virtual Electronics Lab",
+  "description": "Realistic Virtual Electronics Laboratory with UNI-T UTD2102CEX+ Oscilloscope, LW-1641 Function Generator, ATTEN APS3005S Power Supply, Multimeters, and Trainer Board.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
